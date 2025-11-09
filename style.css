@@ -185,18 +185,79 @@ body::before {
   text-align: left;
 }
 
+/* Subject button styles */
 .subject-btn {
   background: transparent;
   border: 1px solid var(--border);
   width: 100%;
-  padding: 12px 15px;
-  margin: 8px 0;
-  border-radius: 8px;
-  color: var(--text2);
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: var(--text);
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: left;
-  font-size: 14px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.subject-btn.has-link {
+  border-color: var(--accent);
+  background: rgba(0, 198, 255, 0.05);
+}
+
+.subject-btn.has-link:hover {
+  background: rgba(0, 198, 255, 0.1);
+  border-color: var(--accent);
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3);
+}
+
+.subject-btn.no-link {
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text2);
+  cursor: not-allowed;
+}
+
+.subject-btn.no-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.subject-btn i {
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+.subject-btn.has-link i {
+  color: var(--accent);
+}
+
+.subject-btn.no-link i {
+  color: var(--text2);
+}
+
+/* Link indicators */
+.link-indicator {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.no-link-indicator {
+  color: var(--text2);
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+/* Remove unused sections */
+#files, #subjects, #semesters {
+  display: none !important;
 }
 
 .subject-btn:hover {

@@ -34,117 +34,49 @@ document.addEventListener("mousemove", (e) => {
 
 const structure = {
   "Semester 1": {
-    "C++ & Data Structures": [
-      { name: "DEC 2020", url: "https://drive.google.com/file/d/1LonYGjWr5DJT-Kexr8XmxA80ZLLJYI8k/view?usp=sharing" },
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_2/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_3/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_4/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_5/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_6/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_7/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_8/view?usp=sharing" }
-    ],
-    "Digital Logic Fundamentals": [
-      { name: "DEC 2020", url: "https://drive.google.com/file/d/YOUR_FILE_ID_9/view?usp=sharing" },
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_10/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_11/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_12/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_13/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_14/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_15/view?usp=sharing" }
-    ],
-    "Database Management Systems": [
-      { name: "DEC 2020", url: "https://drive.google.com/file/d/YOUR_FILE_ID_16/view?usp=sharing" },
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_17/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_18/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_19/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_20/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_21/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_22/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_23/view?usp=sharing" }
-    ],
-    "Accounting & Financial Management": [
-      { name: "DEC 2020", url: "https://drive.google.com/file/d/YOUR_FILE_ID_24/view?usp=sharing" },
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_25/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_26/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_27/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_28/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_29/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_30/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_31/view?usp=sharing" }
-    ],
-    "Operating Systems": [
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_32/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_33/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_34/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_35/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_36/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_37/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_38/view?usp=sharing" }
-    ]
+    "C++ & Data Structures": "https://drive.google.com/drive/folders/1_qw_JPM3hUUDiOBbSDQ-4YBPke0e3G3D?usp=sharing",
+    "Digital Logic Fundamentals": "https://drive.google.com/drive/folders/1YmKBsboUgsEk2wfn0vZEDbwiKwODaamA?usp=sharing",
+    "Database Management Systems": "https://drive.google.com/drive/folders/1kizUECT-xujBDOpuU7BrH6wzISOj3kY2?usp=sharing",
+    "Accounting & Financial Management": "https://drive.google.com/drive/folders/1UmfwotFdMGhj57d41EoRSvdlU6BRkSMd?usp=sharing",
+    "Operating Systems": "https://drive.google.com/drive/folders/1QJ3s0p1uOqrgEQTAqek6IvJbBGABIl6u?usp=sharing"
   },
   "Semester 2": {
-    "Design and Analysis of Algorithms": [
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_39/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_40/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_41/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_42/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_43/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_44/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_45/view?usp=sharing" }
-    ],
-    "Object Oriented Analysis and Design": [
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_46/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_47/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_48/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_49/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_50/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_51/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_52/view?usp=sharing" }
-    ],
-    "Artificial Intelligence": [
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_53/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_54/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_55/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_56/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_57/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_58/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_59/view?usp=sharing" }
-    ],
-    "Web Based Application Development": [
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_60/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_61/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_62/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_63/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_64/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_65/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_66/view?usp=sharing" }
-    ],
-    "Computer Network": [
-      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_67/view?usp=sharing" },
-      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_68/view?usp=sharing" },
-      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_69/view?usp=sharing" },
-      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_70/view?usp=sharing" },
-      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_71/view?usp=sharing" },
-      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_72/view?usp=sharing" },
-      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_73/view?usp=sharing" }
-    ]
+    "Design and Analysis of Algorithms": "https://drive.google.com/drive/folders/196GWoj0NY82W0StdjbSGVHICVfN_tzZK?usp=sharing",
+    "Object Oriented Analysis and Design": "https://drive.google.com/drive/folders/1J46QcyNAMKXgzlHjHuR4TijUGJKkmKT5?usp=sharing",
+    "Artificial Intelligence": "https://drive.google.com/drive/folders/1iz_l4miXs9tjOZYsyJiXpBoplivutfeF?usp=sharing",
+    "Web Based Application Development": "https://drive.google.com/drive/folders/18bvMPRseR8p9f_PfHlxMijMKgHSetSjo?usp=sharing",
+    "Computer Network": "https://drive.google.com/drive/folders/1d-t3QMYj4nRL8iTw3l3oGx596NrCIt0I?usp=sharing"
   },
   "Semester 3": {
-    "Machine Learning": [],
-    "Software Engineering": [],
-    "Cloud Computing": [],
-    "Mobile Application Development": [],
-    "Cyber Security": []
+    "Machine Learning": "",
+    "Software Engineering": "",
+    "Cloud Computing": "",
+    "Mobile Application Development": "",
+    "Cyber Security": ""
   },
   "Semester 4": {
-    "Big Data Analytics": [],
-    "Internet of Things": [],
-    "Blockchain Technology": [],
-    "Project Management": [],
-    "Elective Subjects": []
+    "Big Data Analytics": "",
+    "Internet of Things": "",
+    "Blockchain Technology": "",
+    "Project Management": "",
+    "Elective Subjects": ""
   }
 };
+
+// Simple function to open drive link when subject is clicked
+function openDriveLink(sem, sub) {
+  playSound();
+  
+  const driveLink = structure[sem][sub];
+  
+  if (driveLink && driveLink.trim() !== "") {
+    // Open Google Drive link in new tab
+    window.open(driveLink, '_blank');
+  } else {
+    // Show message if no link available
+    alert(`No Google Drive link available for ${sub} yet.\n\nPlease check back later or contact the administrator.`);
+  }
+}
 // Function to validate file URLs (for debugging)
 async function validateFileStructure() {
   console.log('Validating file structure...');
@@ -181,50 +113,70 @@ function openQuestionPapers() {
   setTimeout(() => {
     mainBtn.style.display = 'none';
     
-    // Create semester sections with subjects
+    // Create semester sections with subjects that directly open Drive links
     const container = document.getElementById('semester-sections');
     container.innerHTML = `
       <div class="semester-section semester1-section">
         <h2 class="section-title">Semester 1</h2>
         <div class="subject-list">
-          ${Object.keys(structure['Semester 1']).map(subject => `
-            <button class="subject-btn" onclick="showFiles('Semester 1', '${subject}')">
-              <i class="fas fa-book"></i> ${subject}
+          ${Object.keys(structure['Semester 1']).map(subject => {
+            const hasLink = structure['Semester 1'][subject] && structure['Semester 1'][subject].trim() !== "";
+            return `
+            <button class="subject-btn ${hasLink ? 'has-link' : 'no-link'}" 
+                    onclick="openDriveLink('Semester 1', '${subject}')">
+              <i class="fas ${hasLink ? 'fa-folder-open' : 'fa-folder'}"></i> 
+              ${subject}
+              ${hasLink ? '<span class="link-indicator">↗</span>' : '<span class="no-link-indicator">⏳</span>'}
             </button>
-          `).join('')}
+          `}).join('')}
         </div>
       </div>
       
       <div class="semester-section semester2-section">
         <h2 class="section-title">Semester 2</h2>
         <div class="subject-list">
-          ${Object.keys(structure['Semester 2']).map(subject => `
-            <button class="subject-btn" onclick="showFiles('Semester 2', '${subject}')">
-              <i class="fas fa-book"></i> ${subject}
+          ${Object.keys(structure['Semester 2']).map(subject => {
+            const hasLink = structure['Semester 2'][subject] && structure['Semester 2'][subject].trim() !== "";
+            return `
+            <button class="subject-btn ${hasLink ? 'has-link' : 'no-link'}" 
+                    onclick="openDriveLink('Semester 2', '${subject}')">
+              <i class="fas ${hasLink ? 'fa-folder-open' : 'fa-folder'}"></i> 
+              ${subject}
+              ${hasLink ? '<span class="link-indicator">↗</span>' : '<span class="no-link-indicator">⏳</span>'}
             </button>
-          `).join('')}
+          `}).join('')}
         </div>
       </div>
       
       <div class="semester-section semester3-section">
         <h2 class="section-title">Semester 3</h2>
         <div class="subject-list">
-          ${Object.keys(structure['Semester 3']).map(subject => `
-            <button class="subject-btn" onclick="showFiles('Semester 3', '${subject}')">
-              <i class="fas fa-book"></i> ${subject}
+          ${Object.keys(structure['Semester 3']).map(subject => {
+            const hasLink = structure['Semester 3'][subject] && structure['Semester 3'][subject].trim() !== "";
+            return `
+            <button class="subject-btn ${hasLink ? 'has-link' : 'no-link'}" 
+                    onclick="openDriveLink('Semester 3', '${subject}')">
+              <i class="fas ${hasLink ? 'fa-folder-open' : 'fa-folder'}"></i> 
+              ${subject}
+              ${hasLink ? '<span class="link-indicator">↗</span>' : '<span class="no-link-indicator">⏳</span>'}
             </button>
-          `).join('')}
+          `}).join('')}
         </div>
       </div>
       
       <div class="semester-section semester4-section">
         <h2 class="section-title">Semester 4</h2>
         <div class="subject-list">
-          ${Object.keys(structure['Semester 4']).map(subject => `
-            <button class="subject-btn" onclick="showFiles('Semester 4', '${subject}')">
-              <i class="fas fa-book"></i> ${subject}
+          ${Object.keys(structure['Semester 4']).map(subject => {
+            const hasLink = structure['Semester 4'][subject] && structure['Semester 4'][subject].trim() !== "";
+            return `
+            <button class="subject-btn ${hasLink ? 'has-link' : 'no-link'}" 
+                    onclick="openDriveLink('Semester 4', '${subject}')">
+              <i class="fas ${hasLink ? 'fa-folder-open' : 'fa-folder'}"></i> 
+              ${subject}
+              ${hasLink ? '<span class="link-indicator">↗</span>' : '<span class="no-link-indicator">⏳</span>'}
             </button>
-          `).join('')}
+          `}).join('')}
         </div>
       </div>
     `;
