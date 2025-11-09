@@ -32,104 +32,102 @@ document.addEventListener("mousemove", (e) => {
   document.body.style.backgroundPosition = `${x}px ${y}px`;
 });
 
-/* PDF STRUCTURE */
-/* PDF STRUCTURE */
 const structure = {
   "Semester 1": {
     "C++ & Data Structures": [
-      "sem/sem1/PCATA_C++ & Data Structures/DEC 2020_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/DEC 2021_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/DEC 2022_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/DEC 2023_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/JUN  2022_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/JUN-2023_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/JUNE 2024_PCAD1.PDF",
-      "sem/sem1/PCATA_C++ & Data Structures/MAY 2021_PCAD1.PDF"
+      { name: "DEC 2020", url: "https://drive.google.com/file/d/1LonYGjWr5DJT-Kexr8XmxA80ZLLJYI8k/view?usp=sharing" },
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_2/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_3/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_4/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_5/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_6/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_7/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_8/view?usp=sharing" }
     ],
     "Digital Logic Fundamentals": [
-      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2020_PCATB.PDF",
-      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2021_PCATB.PDF",
-      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2022_PCATB.PDF",
-      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2023_PCATB.PDF",
-      "sem/sem1/PCATB_Digital Logic Fundamentals/JUN  2022_PCATB.PDF",
-      "sem/sem1/PCATB_Digital Logic Fundamentals/JUN-2023_PCATB.PDF",
-      "sem/sem1/PCATB_Digital Logic Fundamentals/JUNE 2024_PCATB.PDF"
+      { name: "DEC 2020", url: "https://drive.google.com/file/d/YOUR_FILE_ID_9/view?usp=sharing" },
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_10/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_11/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_12/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_13/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_14/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_15/view?usp=sharing" }
     ],
     "Database Management Systems": [
-      "sem/sem1/PCATC_Database Management Systems/DEC 2020_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/DEC 2021_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/DEC 2022_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/DEC 2023_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/JUN  2022_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/JUN-2023_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/JUNE 2024_PCATC.PDF",
-      "sem/sem1/PCATC_Database Management Systems/MAY 2021_PCATC.PDF"
+      { name: "DEC 2020", url: "https://drive.google.com/file/d/YOUR_FILE_ID_16/view?usp=sharing" },
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_17/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_18/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_19/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_20/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_21/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_22/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_23/view?usp=sharing" }
     ],
     "Accounting & Financial Management": [
-      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2020_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2021_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2022_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2023_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/JUN  2022_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/JUN-2023_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/JUNE 2024_PCAD1.PDF",
-      "sem/sem1/PCAD1_Accounting & Financial Management/MAY 2021_PCAD1.PDF"
+      { name: "DEC 2020", url: "https://drive.google.com/file/d/YOUR_FILE_ID_24/view?usp=sharing" },
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_25/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_26/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_27/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_28/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_29/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_30/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_31/view?usp=sharing" }
     ],
     "Operating Systems": [
-      "sem/sem1/PCAEA_Operating Systems/DEC 2021_PCAEA.PDF",
-      "sem/sem1/PCAEA_Operating Systems/DEC 2022_PCAEA.PDF",
-      "sem/sem1/PCAEA_Operating Systems/DEC 2023_PCAEA.PDF",
-      "sem/sem1/PCAEA_Operating Systems/JUN  2022_PCAEA.PDF",
-      "sem/sem1/PCAEA_Operating Systems/JUN-2023_PCAEA.PDF",
-      "sem/sem1/PCAEA_Operating Systems/JUNE 2024_PCAEA.PDF",
-      "sem/sem1/PCAEA_Operating Systems/MAY 2021_PCAEA.PDF"
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_32/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_33/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_34/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_35/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_36/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_37/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_38/view?usp=sharing" }
     ]
   },
   "Semester 2": {
     "Design and Analysis of Algorithms": [
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/DEC 2021_PCATD.PDF",
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/DEC 2022_PCATD.PDF",
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/DEC 2023_PCATD.PDF",
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/JUN  2022_PCATD.PDF",
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/JUN-2023_PCATD.PDF",
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/JUNE 2024_PCATD.PDF",
-      "sem/sem2/PCATD_Design and Analysis of Algorithms/MAY 2021_PCATD.PDF"
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_39/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_40/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_41/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_42/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_43/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_44/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_45/view?usp=sharing" }
     ],
     "Object Oriented Analysis and Design": [
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/DEC 2021_PCATE.PDF",
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/DEC 2022_PCATE.PDF",
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/DEC 2023_PCATE.PDF",
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/JUN  2022_PCATE.PDF",
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/JUN-2023_PCATE.PDF",
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/JUNE 2024_PCATE.PDF",
-      "sem/sem2/PCATE_Object Oriented Analysis and Design/MAY 2021_PCATE.PDF"
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_46/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_47/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_48/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_49/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_50/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_51/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_52/view?usp=sharing" }
     ],
     "Artificial Intelligence": [
-      "sem/sem2/PCATF_Artificial Intelligence/DEC 2021_PCATF.PDF",
-      "sem/sem2/PCATF_Artificial Intelligence/DEC 2022_PCATF.PDF",
-      "sem/sem2/PCATF_Artificial Intelligence/DEC 2023_PCATF.PDF",
-      "sem/sem2/PCATF_Artificial Intelligence/JUN  2022_PCATF.PDF",
-      "sem/sem2/PCATF_Artificial Intelligence/JUN-2023_PCATF.PDF",
-      "sem/sem2/PCATF_Artificial Intelligence/JUNE 2024_PCATF.PDF",
-      "sem/sem2/PCATF_Artificial Intelligence/MAY 2021_PCATF.PDF"
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_53/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_54/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_55/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_56/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_57/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_58/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_59/view?usp=sharing" }
     ],
     "Web Based Application Development": [
-      "sem/sem2/PCAD2_Web Based Application Development/DEC 2021_PCAD2.PDF",
-      "sem/sem2/PCAD2_Web Based Application Development/DEC 2022_PCAD2.PDF",
-      "sem/sem2/PCAD2_Web Based Application Development/DEC 2023_PCAD2.PDF",
-      "sem/sem2/PCAD2_Web Based Application Development/JUN  2022_PCAD2.PDF",
-      "sem/sem2/PCAD2_Web Based Application Development/JUN-2023_PCAD2.PDF",
-      "sem/sem2/PCAD2_Web Based Application Development/JUNE 2024_PCAD2.PDF",
-      "sem/sem2/PCAD2_Web Based Application Development/MAY 2021_PCAD2.PDF"
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_60/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_61/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_62/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_63/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_64/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_65/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_66/view?usp=sharing" }
     ],
     "Computer Network": [
-      "sem/sem2/PCAED_Computer Network/DEC 2021_PCAED.PDF",
-      "sem/sem2/PCAED_Computer Network/DEC 2022_PCAED.PDF",
-      "sem/sem2/PCAED_Computer Network/DEC 2023_PCAED.PDF",
-      "sem/sem2/PCAED_Computer Network/JUN  2022_PCAED.PDF",
-      "sem/sem2/PCAED_Computer Network/JUN-2023_PCAED.PDF",
-      "sem/sem2/PCAED_Computer Network/JUNE 2024_PCAED.PDF",
-      "sem/sem2/PCAED_Computer Network/MAY 2021_PCAED.PDF"
+      { name: "DEC 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_67/view?usp=sharing" },
+      { name: "DEC 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_68/view?usp=sharing" },
+      { name: "DEC 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_69/view?usp=sharing" },
+      { name: "JUN 2022", url: "https://drive.google.com/file/d/YOUR_FILE_ID_70/view?usp=sharing" },
+      { name: "JUN 2023", url: "https://drive.google.com/file/d/YOUR_FILE_ID_71/view?usp=sharing" },
+      { name: "JUNE 2024", url: "https://drive.google.com/file/d/YOUR_FILE_ID_72/view?usp=sharing" },
+      { name: "MAY 2021", url: "https://drive.google.com/file/d/YOUR_FILE_ID_73/view?usp=sharing" }
     ]
   },
   "Semester 3": {
@@ -244,34 +242,118 @@ function showFiles(sem, sub) {
   playSound();
   const div = document.getElementById("files");
   div.style.display = "block";
-  div.innerHTML = `<h2>${sub}</h2><div class="loading">Loading files...</div>`;
   
-  // Clear any previous content and scroll to files section
-  setTimeout(() => {
-    const files = structure[sem][sub];
-    if (files.length === 0) {
-      div.innerHTML = `<h2>${sub}</h2><p class="no-files">No files uploaded yet.</p>`;
-    } else {
-      div.innerHTML = `<h2>${sub}</h2>` + 
-        files.map(file => 
-          `<a href='${file}' download class="pdf-link">
-            <i class="fas fa-file-pdf"></i> ${file.split("/").pop()}
-          </a>`
-        ).join('');
-    }
+  const files = structure[sem][sub];
+  
+  if (files.length === 0) {
+    div.innerHTML = `
+      <h2>${sub}</h2>
+      <p class="no-files">No question papers available yet.</p>
+    `;
+  } else {
+    // Group files by year
+    const filesByYear = {};
     
-    // Smooth scroll to files section
-    setTimeout(() => {
-      div.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'start',
-        inline: 'nearest'
-      });
-      
-      // Add highlight animation
-      div.style.animation = 'highlightFlash 2s ease';
-    }, 100);
-  }, 500);
+    files.forEach(file => {
+      const year = file.name.match(/\d{4}/)?.[0] || 'Other';
+      if (!filesByYear[year]) filesByYear[year] = [];
+      filesByYear[year].push(file);
+    });
+    
+    // Sort years in descending order
+    const sortedYears = Object.keys(filesByYear).sort((a, b) => b - a);
+    
+    div.innerHTML = `
+      <h2>${sub}</h2>
+      <div class="files-count">${files.length} question papers available</div>
+      ${sortedYears.map(year => `
+        <div class="year-section">
+          <h3 class="year-title">${year} Papers</h3>
+          <div class="pdf-grid">
+            ${filesByYear[year].map(file => {
+              const downloadUrl = file.url.replace('/view?', '/preview?');
+              const directDownloadUrl = file.url.replace('/view?', '/uc?export=download&');
+              
+              return `
+              <div class="pdf-card">
+                <i class="fas fa-file-pdf pdf-icon"></i>
+                <div class="pdf-info">
+                  <div class="pdf-name">${getFormattedFileName(file.name)}</div>
+                  <div class="file-type">Google Drive PDF</div>
+                  <div class="drive-actions">
+                    <a href="${file.url}" target="_blank" class="view-btn">
+                      <i class="fas fa-external-link-alt"></i> View in Drive
+                    </a>
+                    <a href="${directDownloadUrl}" class="download-btn" download>
+                      <i class="fas fa-download"></i> Download
+                    </a>
+                    <button onclick="previewDrivePDF('${downloadUrl}')" class="preview-btn">
+                      <i class="fas fa-eye"></i> Preview
+                    </button>
+                  </div>
+                </div>
+              </div>
+            `}).join('')}
+          </div>
+        </div>
+      `).join('')}
+    `;
+  }
+  
+  // Smooth scroll to files section
+  setTimeout(() => {
+    div.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    div.style.animation = 'highlightFlash 2s ease';
+  }, 100);
+}
+
+// Format file names with emojis
+function getFormattedFileName(name) {
+  let formatted = name
+    .replace('DEC', 'December')
+    .replace('JUN', 'June')
+    .replace('JUNE', 'June')
+    .replace('MAY', 'May');
+  
+  // Add emoji based on month
+  if (formatted.includes('December')) formatted = '🎄 ' + formatted;
+  else if (formatted.includes('June')) formatted = '☀️ ' + formatted;
+  else if (formatted.includes('May')) formatted = '🌷 ' + formatted;
+  
+  return formatted;
+}
+
+// Preview Google Drive PDF
+function previewDrivePDF(driveUrl) {
+  playSound();
+  window.open(driveUrl, '_blank', 'width=1000,height=700');
+}
+
+// Enhanced file existence check
+async function checkFileExists(url) {
+  try {
+    const response = await fetch(url, { method: 'HEAD' });
+    console.log(`HEAD request to ${url}: Status ${response.status}`);
+    return response.status === 200;
+  } catch (error) {
+    console.error(`Error checking ${url}:`, error);
+    return false;
+  }
+}
+
+// Enhanced path correction
+function getCorrectedFilePath(originalPath) {
+  // Encode each part of the path separately
+  const pathParts = originalPath.split('/');
+  const encodedParts = pathParts.map(part => {
+    // Encode spaces and other special characters
+    return encodeURIComponent(part).replace(/%20/g, ' ');
+  });
+  
+  let correctedPath = encodedParts.join('/');
+  
+  console.log(`Path correction: ${originalPath} -> ${correctedPath}`);
+  return correctedPath;
 }
 
 function downloadZip() {
