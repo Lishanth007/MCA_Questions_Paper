@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MCA Question Papers - Semesters</title>
+<!-- <h1 class="main-title">Choose Semester</h1> -->
+<div class="creator">
+    by <strong>Lishanth</strong><br>
+
+    <div class="social-icons">
+      <a href="https://github.com/Lishanth007" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="icon github-icon">
+      </a>
+
+      <a href="https://instagram.com/YOUR_INSTA" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon insta-icon">
+      </a>
+    </div>
+  </div>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="fade-in">
+
+<!-- MATRIX BACKGROUND -->
+<canvas id="matrix"></canvas>
+
+<!-- TRON GRID -->
+<div id="tron-grid"></div>
+
+<div id="main-content" class="center-wrapper">  
+
+<section class="semester-section">
+    <h2 class="section-title">Select Semesters</h2>
+
+    <button class="btn neon-btn" onclick="showSubjects('Semester 1')">Semester 1</button>
+    <button class="btn neon-btn" onclick="showSubjects('Semester 2')">Semester 2</button>
+</section>
+<section class="subjects-section" id="subjects-container" style="display: none;">
+    <h2 class="section-title" id="subjects-title">Subjects</h2>
+    <div id="subjects-list"></div>
+  </section>
+<!-- Where subjects and PDFs appear -->
+<div id="subjects" class="card-container center-block"></div>
+<div id="files" class="pdf-list"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+// Auto-show semesters on page load
+window.onload = () => {
+  if (typeof showSemesters === "function") {
+    showSemesters();
+  }
+};
+</script>
+
+</body>
+</html>

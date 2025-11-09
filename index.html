@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MCA Past Year Question Paper</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div id="tron-grid"></div>
+
+<!-- Intro Logo Screen -->
+<div id="intro-screen">
+  <div>
+    <svg class="glitch-logo" viewBox="0 0 200 200" width="90" height="90">
+      <path d="M50 20 V160 H150" stroke="url(#neonBlue)" stroke-width="20" stroke-linecap="round"/>
+      <defs><linearGradient id="neonBlue"><stop stop-color="#00C6FF"/><stop offset="1" stop-color="#0072ff"/></linearGradient></defs>
+    </svg>
+    <div class="logo-text">Give me min...</div>
+  </div>
+</div>
+
+<div id="main-content">
+  <div class="title-row">
+    <svg id="logo-L" viewBox="0 0 200 200" width="70">
+      <path d="M50 20 V160 H150" stroke="url(#neonBlue)" stroke-width="20" stroke-linecap="round"/>
+    </svg>
+    <h1 class="main-title">MCA Past Year Question Paper</h1>
+  </div>
+
+  <div class="creator">
+    by <strong>Lishanth</strong><br>
+    <div class="social-icons">
+      <a href="https://github.com/Lishanth007" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="icon github-icon">
+      </a>
+      <a href="https://instagram.com/YOUR_INSTA" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon insta-icon">
+      </a>
+    </div>
+  </div>
+
+  <button class="btn" onclick="openQuestionPapers()">Open Question Papers</button>
+  
+  <div id="semester-sections" class="semester-sections-container"></div>
+  
+  <div id="semesters" class="card-container"></div>
+  <div id="subjects" class="card-container"></div>
+  <div id="files" class="pdf-list"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+:root {
+  --bg: #121212;
+  --text: #E0E0E0;
+  --text2: #B0B0B0;
+  --border: #444444;
+  --accent: #00C6FF;
+  --accent2: #0072ff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+#tron-grid {
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(to right, rgba(0,150,255,0.18) 0, rgba(0,150,255,0.18) 2px, transparent 2px, transparent 120px),
+              repeating-linear-gradient(to bottom, rgba(0,150,255,0.18) 0, rgba(0,150,255,0.18) 2px, transparent 2px, transparent 120px);
+  transform: perspective(600px) rotateX(60deg);
+  animation: gridMove 6s linear infinite;
+  z-index: -3;
+}
+@keyframes gridMove { from { transform: perspective(600px) rotateX(60deg) translateY(0);} to { transform: translateY(100px) perspective(600px) rotateX(60deg);}}
+canvas#matrix { position: fixed; inset: 0; z-index: -2; opacity: 0.15; }
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at center, #0072ff30, transparent 60%), radial-gradient(circle at bottom right, #00c6ff25, transparent 60%);
+  animation: bgmove 12s infinite alternate;
+  z-index: -1;
+}
+@keyframes bgmove { from { transform: translate(-10%, -10%);} to { transform: translate(10%, 10%);} }
+#intro-screen {
+  position: fixed; inset: 0;
+  background: black;
+  display: flex; justify-content: center; align-items: center;
+  z-index: 2000;
+  animation: fadeOut 1.3s ease forwards;
+  animation-delay: 2.2s;
+}
+@keyframes fadeOut { to { opacity: 0; visibility: hidden; }}
+.glitch-logo { animation: glitch 0.3s infinite alternate; filter: drop-shadow(0 0 15px var(--accent)); }
+@keyframes glitch { 0%{transform:translate(0)} 25%{transform:translate(-3px,1px)} 50%{transform:translate(2px,-2px)} 75%{transform:translate(1px,3px)} 100%{transform:translate(0)} }
+.logo-text { color: var(--accent); text-align: center; font-size: 22px; margin-top: 10px; }
+.title-row { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 90px; }
+#logo-L { animation: floatLogo 3s ease-in-out infinite alternate; }
+@keyframes floatLogo { from{transform:translateY(-4px) rotate(-2deg);} to{transform:translateY(4px) rotate(2deg);} }
+.main-title { font-size: 42px; text-shadow: 0 0 18px var(--accent); }
+.creator { text-align: center; margin-top: 10px; font-size: 18px; color: var(--text2); }
+.social-icons { display: flex; justify-content: center; margin-top: 6px; gap: 18px; }
+.icon { width: 36px; cursor: pointer; transition: 0.3s; }
+.github-icon:hover { filter: drop-shadow(0 0 12px var(--accent)); transform: scale(1.15); }
+.insta-icon:hover { filter: drop-shadow(0 0 12px #ff00ea); transform: scale(1.15); }
+.btn {
+  display: block;
+  margin: 45px auto;
+  padding: 16px;
+  width: 260px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  background: rgba(0,0,0,0.4);
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 12px var(--accent);
+}
+.btn:hover { background: var(--accent); color: black; transform: scale(1.06); box-shadow: 0 0 25px var(--accent2), 0 0 45px var(--accent); }
+.card-container { display: none; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 20px; }
+.card {
+  width: 240px;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+}
+.card::after {
+  content: "";
+  position: absolute; inset: 0;
+  border-radius: inherit;
+  border: 1px solid var(--accent2);
+  opacity: 0; transition: 0.25s;
+}
+.card:hover::after { opacity: 1; box-shadow: 0 0 25px var(--accent); }
+.card:hover { transform: scale(1.08) translateZ(50px); }
+.pdf-list { display: none; text-align: center; margin-top: 20px; }
+.pdf-list a { display: block; color: var(--accent); margin: 6px; font-size: 18px; text-decoration: none; }
+
+/* Semester Sections Container */
+.semester-sections-container {
+  display: none;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Semester Sections */
+.semester-section {
+  padding: 30px;
+  border-radius: 18px;
+  border: 2px solid #00C6FF;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 198, 255, 0.04);
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 0px 22px rgba(0, 198, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.semester-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 35px rgba(0, 198, 255, 0.6);
+}
+
+/* Different colors for each semester */
+.semester1-section {
+  border-color: #00C6FF;
+}
+
+.semester2-section {
+  border-color: #00FF88;
+}
+
+.semester2-section .section-title {
+  border-bottom-color: #00FF88;
+}
+
+.semester2-section .neon-btn {
+  border-color: #00FF88;
+}
+
+.semester2-section .neon-btn:hover {
+  box-shadow: 0 0 15px #00FF88, inset 0 0 10px #00CC66;
+}
+
+/* Section heading */
+.section-title {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #E0E0E0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #00C6FF;
+  padding-bottom: 10px;
+}
+
+/* Neon Buttons */
+.neon-btn {
+  background: transparent;
+  border: 2px solid #00C6FF;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #E0E0E0;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.neon-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 15px #00C6FF, inset 0 0 10px #0072ff;
+}
+
+/* Subject List */
+.subject-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.subject-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 14px;
+}
+
+.subject-btn:hover {
+  background: rgba(0, 198, 255, 0.1);
+  border-color: var(--accent);
+  color: var(--text);
+  transform: translateX(5px);
+}
+
+.subject-btn i {
+  margin-right: 10px;
+  color: var(--accent);
+}
+
+/* Loading and empty states */
+.loading {
+  color: var(--accent);
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.no-files {
+  color: var(--text2);
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.pdf-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.pdf-link:hover {
+  background: rgba(0, 198, 255, 0.1);
+}
+
+.fa-file-pdf {
+  color: #ff0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .semester-sections-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .semester-section {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .main-title {
+    font-size: 28px;
+  }
+  
+  .title-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .semester-sections-container {
+    gap: 30px;
+  }
+  
+  .semester-section {
+    width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .semester-sections-container {
+    gap: 25px;
+  }
+  
+  .semester-section {
+    width: 45%;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .semester-sections-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .semester-section {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .main-title {
+    font-size: 28px;
+  }
+  
+  .title-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .semester-section {
+    width: 95%;
+    padding: 20px;
+  }
+  
+  .subject-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Highlight flash animation for files section */
+@keyframes highlightFlash {
+  0% {
+    background: rgba(0, 198, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 198, 255, 0.7);
+  }
+  50% {
+    background: rgba(0, 198, 255, 0.1);
+    box-shadow: 0 0 0 10px rgba(0, 198, 255, 0);
+  }
+  100% {
+    background: rgba(0, 198, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 198, 255, 0);
+  }
+}
+
+/* Files section styling */
+.pdf-list {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid var(--accent);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+}
+
+.pdf-list h2 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+}
+
+.pdf-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.pdf-link:hover {
+  background: rgba(0, 198, 255, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3);
+}
+
+.fa-file-pdf {
+  color: #ff0000;
+  font-size: 1.2rem;
+}
+
+/* Loading animation */
+.loading {
+  color: var(--accent);
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.loading::after {
+  content: '...';
+  animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+/* No files message */
+.no-files {
+  color: var(--text2);
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  padding: 20px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
