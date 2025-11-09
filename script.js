@@ -36,26 +36,139 @@ document.addEventListener("mousemove", (e) => {
 /* PDF STRUCTURE */
 const structure = {
   "Semester 1": {
-    "C++ & Data Structures": ["pdfs/sem1/cpp/file1.pdf"],
-    "Digital Logic Fundamentals": [],
-    "Database Management Systems": [],
-    "Accounting & Financial Management": [],
-    "Operating Systems": []
+    "C++ & Data Structures": [
+      "sem/sem1/PCATA_C++ & Data Structures/DEC 2020_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/DEC 2021_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/DEC 2022_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/DEC 2023_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/JUN  2022_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/JUN-2023_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/JUNE 2024_PCAD1.PDF",
+      "sem/sem1/PCATA_C++ & Data Structures/MAY 2021_PCAD1.PDF"
+    ],
+    "Digital Logic Fundamentals": [
+      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2020_PCATB.PDF",
+      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2021_PCATB.PDF",
+      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2022_PCATB.PDF",
+      "sem/sem1/PCATB_Digital Logic Fundamentals/DEC 2023_PCATB.PDF",
+      "sem/sem1/PCATB_Digital Logic Fundamentals/JUN  2022_PCATB.PDF",
+      "sem/sem1/PCATB_Digital Logic Fundamentals/JUN-2023_PCATB.PDF",
+      "sem/sem1/PCATB_Digital Logic Fundamentals/JUNE 2024_PCATB.PDF"
+    ],
+    "Database Management Systems": [
+      "sem/sem1/PCATC_Database Management Systems/DEC 2020_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/DEC 2021_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/DEC 2022_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/DEC 2023_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/JUN  2022_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/JUN-2023_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/JUNE 2024_PCATC.PDF",
+      "sem/sem1/PCATC_Database Management Systems/MAY 2021_PCATC.PDF"
+    ],
+    "Accounting & Financial Management": [
+      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2020_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2021_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2022_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/DEC 2023_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/JUN  2022_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/JUN-2023_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/JUNE 2024_PCAD1.PDF",
+      "sem/sem1/PCAD1_Accounting & Financial Management/MAY 2021_PCAD1.PDF"
+    ],
+    "Operating Systems": [
+      "sem/sem1/PCAEA_Operating Systems/DEC 2021_PCAEA.PDF",
+      "sem/sem1/PCAEA_Operating Systems/DEC 2022_PCAEA.PDF",
+      "sem/sem1/PCAEA_Operating Systems/DEC 2023_PCAEA.PDF",
+      "sem/sem1/PCAEA_Operating Systems/JUN  2022_PCAEA.PDF",
+      "sem/sem1/PCAEA_Operating Systems/JUN-2023_PCAEA.PDF",
+      "sem/sem1/PCAEA_Operating Systems/JUNE 2024_PCAEA.PDF",
+      "sem/sem1/PCAEA_Operating Systems/MAY 2021_PCAEA.PDF"
+    ]
   },
   "Semester 2": {
-    "Design and Analysis of Algorithms": [],
-    "Object Oriented Analysis and Design": [],
-    "Artificial Intelligence": [],
-    "Web Based Application Development": [],
-    "Computer Network": []
+    "Design and Analysis of Algorithms": [
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/DEC 2021_PCATD.PDF",
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/DEC 2022_PCATD.PDF",
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/DEC 2023_PCATD.PDF",
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/JUN  2022_PCATD.PDF",
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/JUN-2023_PCATD.PDF",
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/JUNE 2024_PCATD.PDF",
+      "sem/sem2/PCATD_Design and Analysis of Algorithms/MAY 2021_PCATD.PDF"
+    ],
+    "Object Oriented Analysis and Design": [
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/DEC 2021_PCATE.PDF",
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/DEC 2022_PCATE.PDF",
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/DEC 2023_PCATE.PDF",
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/JUN  2022_PCATE.PDF",
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/JUN-2023_PCATE.PDF",
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/JUNE 2024_PCATE.PDF",
+      "sem/sem2/PCATE_Object Oriented Analysis and Design/MAY 2021_PCATE.PDF"
+    ],
+    "Artificial Intelligence": [
+      "sem/sem2/PCATF_Artificial Intelligence/DEC 2021_PCATF.PDF",
+      "sem/sem2/PCATF_Artificial Intelligence/DEC 2022_PCATF.PDF",
+      "sem/sem2/PCATF_Artificial Intelligence/DEC 2023_PCATF.PDF",
+      "sem/sem2/PCATF_Artificial Intelligence/JUN  2022_PCATF.PDF",
+      "sem/sem2/PCATF_Artificial Intelligence/JUN-2023_PCATF.PDF",
+      "sem/sem2/PCATF_Artificial Intelligence/JUNE 2024_PCATF.PDF",
+      "sem/sem2/PCATF_Artificial Intelligence/MAY 2021_PCATF.PDF"
+    ],
+    "Web Based Application Development": [
+      "sem/sem2/PCAD2_Web Based Application Development/DEC 2021_PCAD2.PDF",
+      "sem/sem2/PCAD2_Web Based Application Development/DEC 2022_PCAD2.PDF",
+      "sem/sem2/PCAD2_Web Based Application Development/DEC 2023_PCAD2.PDF",
+      "sem/sem2/PCAD2_Web Based Application Development/JUN  2022_PCAD2.PDF",
+      "sem/sem2/PCAD2_Web Based Application Development/JUN-2023_PCAD2.PDF",
+      "sem/sem2/PCAD2_Web Based Application Development/JUNE 2024_PCAD2.PDF",
+      "sem/sem2/PCAD2_Web Based Application Development/MAY 2021_PCAD2.PDF"
+    ],
+    "Computer Network": [
+      "sem/sem2/PCAED_Computer Network/DEC 2021_PCAED.PDF",
+      "sem/sem2/PCAED_Computer Network/DEC 2022_PCAED.PDF",
+      "sem/sem2/PCAED_Computer Network/DEC 2023_PCAED.PDF",
+      "sem/sem2/PCAED_Computer Network/JUN  2022_PCAED.PDF",
+      "sem/sem2/PCAED_Computer Network/JUN-2023_PCAED.PDF",
+      "sem/sem2/PCAED_Computer Network/JUNE 2024_PCAED.PDF",
+      "sem/sem2/PCAED_Computer Network/MAY 2021_PCAED.PDF"
+    ]
   },
   "Semester 3": {
-    "No doc...": []
+    "Machine Learning": [],
+    "Software Engineering": [],
+    "Cloud Computing": [],
+    "Mobile Application Development": [],
+    "Cyber Security": []
   },
   "Semester 4": {
-    "No doc...": []
+    "Big Data Analytics": [],
+    "Internet of Things": [],
+    "Blockchain Technology": [],
+    "Project Management": [],
+    "Elective Subjects": []
   }
 };
+// Function to validate file URLs (for debugging)
+async function validateFileStructure() {
+  console.log('Validating file structure...');
+  
+  for (const [semester, subjects] of Object.entries(structure)) {
+    console.log(`\n${semester}:`);
+    
+    for (const [subject, files] of Object.entries(subjects)) {
+      console.log(`  ${subject}: ${files.length} files`);
+      
+      // Check first file to see if it exists
+      if (files.length > 0) {
+        const firstFile = files[0];
+        const exists = await checkFileExists(firstFile);
+        console.log(`    Sample file: ${firstFile} - ${exists ? '✅ EXISTS' : '❌ MISSING'}`);
+      }
+    }
+  }
+}
+
+// Call this in console to check your file structure
+// validateFileStructure();
 
 function playSound() { uiSound.currentTime = 0; uiSound.play(); }
 
@@ -165,4 +278,78 @@ function downloadZip() {
   playSound();
   window.location.href = "all_question_papers.zip";
   setTimeout(() => alert("Upload all_question_papers.zip to repo root"), 600);
+}
+
+// Function to validate and correct file paths
+function getCorrectedFilePath(originalPath) {
+  // Remove any extra spaces and normalize the path
+  let correctedPath = originalPath
+    .replace(/\/\//g, '/') // Remove double slashes
+    .replace(/ /g, '%20') // Encode spaces for URLs
+    .trim();
+  
+  return correctedPath;
+}
+
+// Enhanced showFiles function with path correction
+function showFiles(sem, sub) {
+  playSound();
+  const div = document.getElementById("files");
+  div.style.display = "block";
+  div.innerHTML = `<h2>${sub}</h2><div class="loading">Loading question papers...</div>`;
+  
+  setTimeout(() => {
+    const files = structure[sem][sub];
+    if (files.length === 0) {
+      div.innerHTML = `
+        <h2>${sub}</h2>
+        <p class="no-files">No question papers available yet.</p>
+      `;
+    } else {
+      const filesByYear = groupFilesByYear(files);
+      
+      div.innerHTML = `
+        <h2>${sub}</h2>
+        <div class="files-count">${files.length} question papers available</div>
+        ${Object.keys(filesByYear).map(year => `
+          <div class="year-section">
+            <h3 class="year-title">${year} Papers</h3>
+            <div class="pdf-grid">
+              ${filesByYear[year].map(file => {
+                const correctedPath = getCorrectedFilePath(file);
+                return `
+                <div class="pdf-card">
+                  <i class="fas fa-file-pdf pdf-icon"></i>
+                  <div class="pdf-info">
+                    <div class="pdf-name">${getCleanFileName(file)}</div>
+                    <div class="file-path">${correctedPath}</div>
+                    <div class="download-actions">
+                      <a href="${correctedPath}" download class="download-btn" target="_blank">
+                        <i class="fas fa-download"></i> Download
+                      </a>
+                      <button onclick="previewPDF('${correctedPath}')" class="preview-btn">
+                        <i class="fas fa-eye"></i> Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              `}).join('')}
+            </div>
+          </div>
+        `).join('')}
+      `;
+    }
+    
+    setTimeout(() => {
+      div.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      div.style.animation = 'highlightFlash 2s ease';
+    }, 100);
+  }, 500);
+}
+
+// PDF Preview function
+function previewPDF(filePath) {
+  playSound();
+  const correctedPath = getCorrectedFilePath(filePath);
+  window.open(correctedPath, '_blank');
 }
