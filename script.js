@@ -49,11 +49,10 @@ const structure = {
     "Computer Network": "https://drive.google.com/drive/folders/1d-t3QMYj4nRL8iTw3l3oGx596NrCIt0I?usp=sharing"
   },
   "Semester 3": {
-    "Machine Learning": "",
-    "Software Engineering": "",
-    "Cloud Computing": "",
-    "Mobile Application Development": "",
-    "Cyber Security": ""
+    "Machine Learning": "https://drive.google.com/drive/folders/1L6jY24VCxfRPaHu4L-VJpR2rlH6pBtEv?usp=sharing",
+    "Software Project Management": "https://drive.google.com/drive/folders/1JOyb8JIPkXJ-wlRByC-7MZL2F0oKkA_O?usp=sharing",
+    "Cloud Computing": "https://drive.google.com/drive/folders/1gLIc-xCqiXje_ChYbxqJUtoNGIbgQv_h?usp=sharing",
+    "Mobile Application Development": "https://drive.google.com/drive/folders/1jKAjo98OI5-IcbcC_waZdXAkPaaAGA2I?usp=sharing",
   },
   "Semester 4": {
     "Big Data Analytics": "",
